@@ -25,9 +25,6 @@ body {
 .logo {
     width: 35%;
     height: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     cursor: pointer;
 }
 
@@ -60,17 +57,20 @@ a {
     cursor: pointer;
 }
 
-.header-btn1 {
+.header-btn {
     width: 50%;
     height: 100px;
     display: flex;
     align-items: center;
+}
+
+.header-btn1 {
     justify-content: flex-start;
 }
 
 .header-btn2 {
-    width: 50%;
-    height: 100px;
+    justify-content: center;
+    background-color: #6785ff;
 }
 
 .tel {
@@ -85,13 +85,6 @@ a {
     margin-left: 20px;
 }
 
-.header-btn2 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #6785ff;
-}
-
 .text {
     color: #fff;
     font-size: 16px;
@@ -99,7 +92,7 @@ a {
     font-family: "Muli",sans-serif;
 }
 
-.main-container {
+.parent {
     height: 100vh;
     background-image: url("./images/background.png");
     background-repeat: no-repeat; 
@@ -120,10 +113,13 @@ h1 {
     margin-left: 40px;
 }
 
-.text1 {
+.text-bold {
     font-size: 27px;
     color: #fff;
     font-family: "Muli",sans-serif;
+}
+
+.text-spacing {
     margin-bottom: 50px;
     margin-left: 40px;
 }
@@ -141,12 +137,10 @@ h1 {
 }
 
 .services-area {
-    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    padding-top: 90px;
     border-bottom: 1px solid #dee2e6!important;
 }
 
@@ -163,10 +157,7 @@ h2 {
 }
 
 .services-icon {
-    display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
     width: 310px;
     height: 360;
 }
@@ -189,17 +180,15 @@ h3 {
 }
 
 .container1 {
-    display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    width: 75%;
+    width: 100%;
     margin: 0 auto;
 }
 
 .offer-services {
     text-align: center;
-    margin: 60px;
+    margin: 0 auto;
+    width: 90%;
 }
 
 .button1 {
@@ -212,12 +201,13 @@ h3 {
     border: none;
     cursor: pointer;
     width: 110px;
-    height: 30px
+    height: 30px;
+    margin-top: 60px;
 }
 
 .container1 > div {
-    width: 345px;
-    height: 350px;
+    width: 50%;
+    height: 550px;
 }
 
 .child1 {
@@ -228,10 +218,7 @@ h3 {
 
 .child-icon {
    background-image: url(./images/xoffers2..webp);
-   display: flex;
    flex-direction: column;
-   align-items: center;
-   justify-content: center;
 }
 
 .child2 {
@@ -240,7 +227,7 @@ h3 {
     background-size: cover;
 }
 
-h {
+h5 {
     color: #fff;
     font-size: 24px;
     font-weight: 600;
@@ -254,10 +241,12 @@ h {
     font-family: "Muli",sans-serif;
     line-height: 30px;
     text-align: center;
+    display: inline-block;
+    width: 60%;
 }
 
 .main {
-    width: 1200px;
+    width: 90%;
     height: 240px;
     background-image: url(./images/section_bg01.png.webp);
     display: flex;
@@ -268,7 +257,7 @@ h {
     margin-bottom: 100px;
 }
 
-.left {
+.pl-30 {
     padding-left: 30px;
 }
 
@@ -307,6 +296,10 @@ h {
     justify-content: space-evenly;
 }
 
-.right {
-    padding-right: 30px;
+.button2 > img {
+    margin-right: 10px;
+}
+
+.pr-80 {
+    padding-right: 80px;
 }
